@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeffrey Harris – Photography</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-wrapper">
+          <!-- 🎵 Music Player -->
+          <div class="music-player">
+            <audio id="bg-music" autoplay loop>
+              
+              <source src="content/audio/Anne Akiko Meyers, 'Liebesleid', Love's Sorrow Fritz Kreisler.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="music-info">Love's Sorrow Fritz Kreisler</div>
+            <button id="toggle-music">Pause</button>
+          </div>
+      
+          <nav class="nav-wrapper">
+            <ul>
+              <li><a href="index.html" class="home-btn">Home</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="films.html">Films</a></li>
+              <li><a href="art.html">Art</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="writing.html">Writing</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="other.html">Other</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+  <main>
+    <section class="films-intro">
+        <h2>My Films</h2>
+        <p>Enjoy.</p>
+    </section>
+
+    <!--Copy multiple times to use for multiple videos-->
+
+    <section class="video-about-section">
+        <div class="video-container">
+          <!-- Instagram Reel Embed -->
+  <blockquote class="instagram-media"
+  data-instgrm-permalink="https://www.instagram.com/reel/DE9zlqip_1i/?utm_source=ig_embed&amp;utm_campaign=loading"
+  data-instgrm-version="14"
+  style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px rgba(0,0,0,0.5); margin: 1rem auto; max-width:540px; min-width:326px; padding:0; width:100%;">
+</blockquote>
+        </div>
+        <div class="about-container">
+          <h2>About This Video</h2>
+          <p>Comedy video just to learn color grading and different camera angles! Click to watch!!</p>
+        </div>
+      </section>
+      
+      <section class="video-about-section">
+        <div class="about-container">
+          <h2>About This Video</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="video-container">
+          <video width="100%" controls>
+            <source src="content/video/Coming soon Glitch video effects.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        
+      </section>
+
+
+  </main>
+
+  <footer>
+    <p>© Jeffrey Harris — All Rights Reserved.</p>
+    <p>Connect with me on social or <a href="mailto:jeffrey2006harris@gmail.com">email me</a></p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('toggle-music');
+  
+    toggleBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        toggleBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        toggleBtn.textContent = 'Play';
+      }
+    });
+  </script>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>

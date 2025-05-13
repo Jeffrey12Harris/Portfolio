@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeffrey Harris – [SECTION NAME]</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Darlington+Signature&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <!-- 🎵 Music Player -->
+      <div class="music-player">
+        <audio id="bg-music" autoplay loop>
+          <source src="content/audio/Chopin - Nocturne op.9 No.2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-info">Chopin – Nocturne Op. 9 No. 2</div>
+        <button id="toggle-music">Pause</button>
+      </div>
+
+      <!-- 🔗 Navigation Bar -->
+      <nav class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="home-btn">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="other.html">Other</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="art-header">
+    <div class="svg-wrapper">
+        <h1 class="art-title">A R T</h1>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg" class="driv-svg"><path d="M 0,700 L 0,0 C 29.023752893475226,101.93600147517657 58.04750578695045,203.87200295035314 82,230 C 105.95249421304955,256.12799704964686 124.83372974567337,206.447989673764 148,193 C 171.16627025432663,179.552010326236 198.61757523035612,202.3360383545907 224,218 C 249.38242476964388,233.6639616454093 272.69596933290217,242.20785690787324 293,232 C 313.30403066709783,221.79214309212676 330.5985474380352,192.83253401391624 352,211 C 373.4014525619648,229.16746598608376 398.9098409149569,294.4620070364618 422,313 C 445.0901590850431,331.5379929635382 465.7620889021374,303.31943784023656 494,323 C 522.2379110978626,342.68056215976344 558.0418034764937,410.260241602592 583,391 C 607.9581965235063,371.739758397408 622.0706971918879,265.6395957493956 642,273 C 661.9293028081121,280.3604042506044 687.6754077559544,401.1813753998255 710,390 C 732.3245922440456,378.8186246001745 751.2276717842943,235.63490265130224 779,223 C 806.7723282157057,210.36509734869776 843.4139051068684,328.2790139949655 871,355 C 898.5860948931316,381.7209860050345 917.1167077882324,317.24904136883583 935,297 C 952.8832922117676,276.75095863116417 970.1192637402019,300.72482052969116 996,288 C 1021.8807362597981,275.27517947030884 1056.40623725096,225.85167651239954 1087,217 C 1117.59376274904,208.14832348760046 1144.2557872559582,239.8684734207106 1165,263 C 1185.7442127440418,286.1315265792894 1200.570613725207,300.674429804758 1222,317 C 1243.429386274793,333.325570195242 1271.4617578432135,351.43380736025745 1294,321 C 1316.5382421567865,290.56619263974255 1333.5823549019387,211.59034075421215 1357,150 C 1380.4176450980613,88.40965924578785 1410.2088225490306,44.204829622893925 1440,0 L 1440,700 L 0,700 Z" stroke="none" stroke-width="0" fill="#9c6644" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 350)"></path></svg>
+    </div>
+  </section>
+
+  
+    <!-- 🔧 Replace this with your section content -->
+    <section class="content">
+        <h2>My art peices</h2>
+
+        <div class="art-content">
+          <div class="art-item">
+            <img src="content/art/IMG_4911.jpg" alt="Monster coming out of the well" loading="lazy" />
+            <div class="art-description">Monster coming out of the well</div>
+          </div>
+          <div class="art-item">
+            <img src="content/art/IMG_4912.jpg" alt="political peice addressing the death of Mahsa Amini" loading="lazy" />
+            <div class="art-description">political peice addressing the death of Mahsa Amini</div>
+          </div>
+          <div class="art-item">
+            <img src="content/art/IMG_4913.jpg" alt="Do you believe in monsters?" loading="lazy" />
+            <div class="art-description">Do you believe in monsters?</div>
+          </div>
+          <div class="art-item">
+            <img src="content/art/IMG_4914.jpg" alt="Disrupted being" loading="lazy" />
+            <div class="art-description">Disrupted being</div>
+          </div>
+        </div>
+      </section>
+      
+
+    <footer>
+      <p>© Jeffrey Harris — All Rights Reserved.</p>
+      <p>Connect with me on social or <a href="mailto:jeffrey2006harris@gmail.com">email me</a></p>
+    </footer>
+  </main>
+
+  <!-- Modal Popup -->
+<div id="art-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-img" id="modal-image" />
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+  
+
+
+  <!-- 🎵 Music Control Script -->
+  <script>
+    const modal = document.getElementById('art-modal');
+  const modalImg = document.getElementById('modal-image');
+  const captionText = document.getElementById('modal-caption');
+  const closeBtn = document.querySelector('.close');
+
+  document.querySelectorAll('.art-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const img = item.querySelector('img');
+      const desc = item.querySelector('.art-description').textContent;
+
+      modal.style.display = 'block';
+      modalImg.src = img.src;
+      captionText.textContent = desc;
+    });
+  });
+
+  closeBtn.onclick = function() {
+    modal.style.display = 'none';
+  }
+
+  // Close on background click
+  modal.onclick = function(e) {
+    if (e.target === modal) modal.style.display = 'none';
+  }
+
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('toggle-music');
+
+    toggleBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        toggleBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        toggleBtn.textContent = 'Play';
+      }
+    });
+  </script>
+</body>
+</html>

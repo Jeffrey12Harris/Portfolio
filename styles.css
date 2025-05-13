@@ -1,0 +1,467 @@
+/* Base Theme Colors */
+@font-face {
+    font-family: 'Darlington Signature';
+    src: url('fonts/DarlingtonDemo-z8xjG.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+:root {
+    --cream: #EDE0D4;
+    --light-tan: #E6CCB2;
+    --tan: #DDB892;
+    --brown: #7F5539;
+    --accent: #9C6644;
+    --text: #2c1e13;
+    --font-serif: 'Times New Roman', serif;
+    --font-title: 'Darlington Signature', cursive;
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-serif);
+    background-color: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: var(--light-tan);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+
+  nav a {
+    text-decoration: none;
+    color: var(--brown);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--accent);
+  }
+  
+  /* Style for the Home button */
+.home-btn {
+    font-weight: bold;
+    color: var(--accent); /* Use your accent color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: var(--tan); /* Or any other color you'd prefer */
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-btn:hover {
+    background-color: var(--accent); /* Highlight on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+
+
+  main {
+    padding: 2rem;
+  }
+  
+  .intro {
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-family: var(--font-title);
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-align: center;
+  }
+  
+  .intro .highlight {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent);
+    font-family: var(--font-serif);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .photo-sticker {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .sticker {
+    width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .sticker:hover {
+    transform: scale(1.05);
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  .about, .accomplishments, .contact {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: var(--brown);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--tan);
+    padding-bottom: 0.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+
+
+  
+  footer {
+    background-color: var(--light-tan);
+    padding: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text);
+    border-top: 1px solid var(--tan);
+  }
+  
+  .dropcap {
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 0.3rem;
+    font-family: var(--font-serif);
+    color: var(--brown);
+    text-transform: uppercase;
+  }
+  
+  .emphasis {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--accent);
+  }
+  
+/*gallery for photos*/
+
+/* Filter Button Styles */
+
+.photo-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .photo-filters button {
+    background-color: var(--tan); /* Light tan background */
+    border: none;
+    color: var(--text); /* Text color */
+    padding: 0.5rem 1rem;
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .photo-filters button:hover,
+  .photo-filters button.active {
+    background-color: var(--accent); /* Accent color on hover or active state */
+    color: white;
+  }
+  
+  /* General styles for the gallery */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Styling for individual photo container */
+  .photo {
+    width: calc(25% - 1.5rem); /* 4 photos per row, considering gaps */
+    box-sizing: border-box;
+  }
+  
+  /* Ensure images are responsive */
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Optional: Ensures images cover their container without distortion */
+    transition: transform 0.4s ease;
+  }
+  
+  /* Hover effect for images */
+  .photo img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .photo {
+      width: calc(50% - 1.5rem); /* 2 photos per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .photo {
+      width: 100%; /* 1 photo per row on very small screens */
+    }
+  }
+  
+
+/* film section */
+
+.video-about-section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+}
+
+.video-container,
+.about-container {
+  flex: 1 1 45%; /* Take up about 45% of space each */
+  min-width: 300px; /* Prevents squishing on small screens */
+  
+}
+
+.video-container video {
+  border-radius: 12px;
+}
+
+.about-container {
+  font-family: var(--font-serif, serif);
+  color: var(--text, #333);
+}
+
+.about-container h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--brown, #5a3e36);
+}
+
+.about-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.films-intro {
+  text-align: center;
+  font-size: 2rem;
+}
+ 
+
+/* Music player */
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text, #333);
+  font-weight: bold;
+}
+
+.music-player {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--tan);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-music {
+  background-color: var(--tan, #ccc);
+  border: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-music:hover {
+  transform: scale(1.05);
+}
+
+/*art section */
+
+.svg-wrapper {
+  position: relative;
+  height: 100%; /* Adjust based on how tall your SVG is */
+  background-color: var(--cream); /* Optional, for backdrop */
+  overflow: hidden;
+}
+
+.art-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Darlington Signature', cursive;
+  font-size: 10rem;
+  color: white;
+  z-index: 2;
+}
+
+.drip-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+/* art section*/
+
+.art-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.art-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.art-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.art-item:hover img {
+  transform: scale(1.1);
+}
+
+.art-description {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.art-item:hover .art-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* art pop up/
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 999;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.modal-img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.modal-caption {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+ .resume {
+  text-align: center;
+  font-size: 2rem;
+ }

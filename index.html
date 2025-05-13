@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeffrey Harris Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Darlington+Signature&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <!-- 🎵 Music Player -->
+      <div class="music-player">
+        <audio id="bg-music" autoplay loop>
+          <source src="content/audio/Chopin - Nocturne op.9 No.2.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <div class="music-info">Chopin – Nocturne Op. 9 No. 2</div>
+        <button id="toggle-music">Pause</button>
+      </div>
+  
+      <nav class="nav-wrapper">
+        <ul>
+          <li><a href="index.html" class="home-btn">Home</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="art.html">Art</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="other.html">Other</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+
+  <main>
+    <section class="intro">
+        <h1><span class="highlight">Hi There Internet, I'm</span></h1>
+        <h1>Jeffrey Harris</h1>
+      </section>
+      
+
+    <section class="photo-sticker">
+      <img src="content/homepagepicture1.JPG" alt="Jeffrey Harris" class="sticker" />
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+          <span class="dropcap">Hi</span>, I’m <span class="emphasis">Jeffrey Harris</span> — I’m 18 years old and I love to <span class="emphasis">create</span>. Whether it’s <span class="emphasis">art</span>, <span class="emphasis">music</span>, or <span class="emphasis">tech</span> (yes, I design websites too), making things is what gives my day meaning.
+        </p>
+        <p>
+          My journey started in <span class="emphasis">photography</span> — nearly four years ago, I was just taking pictures from my front yard. I never strayed far, but I learned how to <span class="emphasis">see the world</span> through a lens. These days, I shoot more <span class="emphasis">professionally</span>, always chasing a <span class="emphasis">feeling</span> more than a frame.
+        </p>
+        <p>
+          <span class="emphasis">Music</span> has been in my life from the beginning. My dad is an artist, so I guess it passed down to me. I grew up loving <span class="emphasis">classical</span> music — still do. I played <span class="emphasis">clarinet</span> in band through graduation, and I dream of performing work from my favorite composers on <span class="emphasis">piano</span> and <span class="emphasis">violin</span>.
+        </p>
+        <p>
+          My <span class="emphasis">writing</span> and <span class="emphasis">art</span> both lean dark — I credit that to discovering <span class="emphasis">Edgar Allan Poe</span>. His twisted beauty pulled me in, and ever since, I’ve been writing <span class="emphasis">poems</span> and stories that toe the line between eerie and emotional.
+        </p>
+        <p>
+          I started <span class="emphasis">coding</span> in 2020 after a game design tutorial. Game dev didn’t stick, but I found a calling in <span class="emphasis">web design</span> — a perfect blend of <span class="emphasis">creativity</span> and tech, that I thouroughly enjoy!
+        </p>
+        <p>
+          The truth is, most of my work is inspired by my <span class="emphasis">surroundings</span> — the weather, a song, a passing stranger, the color of the sky. I try to reflect the <span class="emphasis">world</span> into feelings and turn those into <span class="emphasis">visuals</span>, <span class="emphasis">stories</span>, and <span class="emphasis">music</span>.
+        </p>
+        <p>
+          Right now, I’m working on building a <span class="emphasis">social media presence</span>, offering <span class="emphasis">photo</span> and <span class="emphasis">video services</span>, and growing my <span class="emphasis">creative portfolio</span>. I hope to attend a <span class="emphasis">top university</span>, study <span class="emphasis">digital media</span>, and minor in <span class="emphasis">music</span>. More than anything, I want to build a business that reflects my <span class="emphasis">skills</span> and <span class="emphasis">dreams</span>.
+        </p>
+        <p>
+          This site is <span class="emphasis">everything I do</span> — I hope you enjoy exploring it as much as I’ve enjoyed creating it.
+        </p>
+      </section>
+      
+
+      <section>
+        <h2 class="resume">Resume</h2>
+
+        <section class="photo-sticker">
+          <img src="content/resume of the century_page-0001.jpg" alt="Jeffrey Harris" class="sticker" />
+        </section>
+
+      </section>
+      
+
+    <!--<section class="accomplishments">
+      <h2>Accomplishments</h2>
+      <ul>
+        <li> Example accomplishment </li>
+      </ul>
+    </section> -->
+
+    <footer>
+        <p>© Jeffrey Harris — All Rights Reserved.</p>
+        <p>Connect with me on <a href="https://www.instagram.com/jeff_fotography/">social</a> or <a href="mailto:jeffrey2006harris@gmail.com">email me</a></p>
+      </footer>
+  </main>
+
+  <script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('toggle-music');
+  
+    toggleBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        toggleBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        toggleBtn.textContent = 'Play';
+      }
+    });
+  </script>
+  
+
+
+</body>
+</html>
